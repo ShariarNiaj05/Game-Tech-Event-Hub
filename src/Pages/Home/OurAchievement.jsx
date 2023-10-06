@@ -5,8 +5,8 @@ import { GiStrong } from "react-icons/gi";
 const OurAchievement = () => {
   return (
     <div className=" bg-red-500 text-center p-10">
-      <h2 className="text-6xl font-black text-white mb-5">Our Achievement</h2>
-      <div className=" flex items-center justify-center gap-20">
+      <h2 className="text-4xl font-black text-white mb-5">Our Achievement</h2>
+      <div className=" flex flex-col md:flex-row items-center justify-center gap-20">
         <div className=" font-bold text-2xl">
           <div className=" text-white font-bold text-4xl text-center">
             <TbBuildingCommunity></TbBuildingCommunity>

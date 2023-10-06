@@ -12,7 +12,7 @@ const WhatWeDo = () => {
 
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-5">
         <div>
-          <div className=" flex gap-3">
+          <div className=" flex flex-col md:flex-row gap-1">
             <div className=" text-6xl text-red-500">
               <MdSportsEsports></MdSportsEsports>
             </div>
@@ -27,7 +27,7 @@ const WhatWeDo = () => {
               </p>
             </div>
           </div>
-          <div className=" flex gap-3">
+          <div className=" flex flex-col md:flex-row gap-1">
             <div className=" text-6xl text-red-500">
               <FaGamepad></FaGamepad>
             </div>
@@ -52,7 +52,7 @@ const WhatWeDo = () => {
           />
         </div>
         <div>
-          <div className=" flex gap-3">
+          <div className=" flex flex-col md:flex-row gap-1">
             <div className=" text-6xl text-red-500">
               <FaGamepad></FaGamepad>
             </div>
@@ -66,7 +66,7 @@ const WhatWeDo = () => {
               </p>
             </div>
           </div>
-          <div className=" flex gap-3">
+          <div className=" flex flex-col md:flex-row gap-1">
             <div className=" text-6xl text-red-500">
               <MdSportsEsports></MdSportsEsports>
             </div>
