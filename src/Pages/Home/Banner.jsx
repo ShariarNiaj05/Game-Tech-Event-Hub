@@ -53,7 +53,7 @@ const Banner = () => {
             in, level up, and join the future of interactive entertainment!
           </p>
         </div>
-        <Link to={'/contact'}><button className="  hidden lg:block mt-96 ml-60 text-white text-6xl bg-red-500 px-10 py-5 rounded-lg ">Connect <small className=" lg:text-sm ">To Get All The Insight</small></button></Link>
+        <Link to={'/contact'}><button className="  hidden lg:block mt-96 ml-60 text-white text-6xl bg-red-500 px-10 py-5 rounded-lg " data-aos="fade-down-right" data-aos-duration="3000">Connect <small className=" lg:text-sm ">To Get All The Insight</small></button></Link>
       </div>
     </div>
   );
