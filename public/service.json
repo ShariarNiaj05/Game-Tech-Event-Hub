@@ -1,0 +1,69 @@
+[
+    {
+      "id": "1",
+      "service_name": "Esports Tournament",
+      "image": "https://i.ibb.co/jDCVYvL/side-view-happy-woman-winning-videogame.jpg",
+      "price": 500,
+      "short_description": "Elite gaming competitions on grand stages, showcasing top-tier talents from around the world.",
+      "duration": "3 days",
+      "availability": "Available",
+      "rating": "4.8",
+      "reviews_count": "250"
+    },
+    {
+      "id": "2",
+      "service_name": "Live Gameplay Streaming",
+      "image": "https://i.ibb.co/VBHR6mW/modern-player-live-streaming-video-games-play-computer-having-fun-with-rpg-tournament-young-adult-pl.jpg",
+      "price": 300,
+      "short_description": "Real-time broadcast of the latest games, connecting players, fans, and communities.",
+      "duration": "2 hours",
+      "availability": "Available",
+      "rating": "4.5",
+      "reviews_count": "320"
+    },
+    {
+      "id": "3",
+      "service_name": "VIP Gaming",
+      "image": "https://i.ibb.co/s1Zv9X7/professional-esport-gamer-playing-game-tournament.jpg",
+      "price": 1000,
+      "short_description": "Exclusive gaming experiences with priority access, private servers, and curated game previews.",
+      "duration": "1 day",
+      "availability": "Waitlisted",
+      "rating": "5.0",
+      "reviews_count": "150"
+    },
+    {
+      "id": "4",
+      "service_name": "Cosplay Contest Management",
+      "image": "https://i.ibb.co/WFvKhzt/smiley-man-wearing-vr-glasses-medium-shot.jpg",
+      "price": 450,
+      "short_description": "Organizing and managing captivating cosplay events, celebrating creativity and fandom.",
+      "duration": "4 hours",
+      "availability": "Available",
+      "rating": "4.7",
+      "reviews_count": "210"
+    },
+    {
+      "id": "5",
+      "service_name": "Hands-on Tech Lab Experiences",
+      "image": "https://i.ibb.co/3vtw7qP/side-view-hands-typing-keyboard.jpg",
+      "price": 600,
+      "short_description": "Interactive labs showcasing the latest in gaming tech. Engage, learn, and play with tomorrow's innovations today.",
+      "duration": "6 hours",
+      "availability": "Waitlisted",
+      "rating": "4.9",
+      "reviews_count": "185"
+    },
+    {
+      "id": "6",
+      "service_name": "Tech Workshop Reservations",
+      "image": "https://i.ibb.co/fMStFQ8/two-young-indian-people-having-fun-with-new-technology-vr-headset-virtual-reality-simulator.jpg",
+      "price": 350,
+      "short_description": "Reserve your spot at premium tech workshops, helmed by industry experts and pioneers.",
+      "duration": "1 day",
+      "availability": "Available",
+      "rating": "4.6",
+      "reviews_count": "270"
+    }
+  ]
+  
