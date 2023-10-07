@@ -3,30 +3,25 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
 
 const Register = () => {
+  const { registerUser } = useContext(AuthContext);
 
-    const { registerUser } = useContext(AuthContext)
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const name = form.get("name");
+    const email = form.get("email");
+    const password = form.get("password");
+    const img = form.get("img");
 
-    
-
-    const handleRegister = e => {
-        e.preventDefault()
-        const form = new FormData(e.currentTarget);
-        const name = form.get('name');
-        const email = form.get('email')
-        const password = form.get('password')
-        const img = form.get('img')
-
-        registerUser(name, email, img, password)
-            .then(result => {
-                console.log(result.user);
-                
-            })
-            .catch(error => {
-            console.log(error);
-        })
-
-    }
-    console.log(name);
+    registerUser(name, email, img, password)
+      .then((result) => {
+        console.log(result.user);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+  console.log(name);
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -97,11 +92,6 @@ const Register = () => {
                 className="input input-bordered"
                 required
               />
-              <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
-              </label>
             </div>
             <div className="form-control mt-6">
               <button type="submit" className="btn btn-primary">

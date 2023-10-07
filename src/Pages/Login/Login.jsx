@@ -1,28 +1,32 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
 
 const Login = () => {
   const { signInUser } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate()
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
+    
+    const email = form.get('email')
+        const password = form.get('password')
 
-    const email = form.get("email");
-      const password = form.get("password");
-      
-      console.log( email, password);
+    console.log(email, password);
 
- /*    signInUser(email, password)
+      signInUser(email, password)
       .then((result) => {
         const presentUser = result.user;
-        // console.log(presentUser);
+
+
+        navigate(location?.state ? location.state : '/')
+
+        console.log(presentUser);
       })
       .catch((error) => {
         console.log(error);
-      }); */
-
-    
+      }); 
   };
   return (
     <div className="hero min-h-screen bg-base-200">
@@ -38,7 +42,7 @@ const Login = () => {
           </p>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form className="card-body">
+          <form onSubmit={handleLogin} className="card-body">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -62,15 +66,9 @@ const Login = () => {
                 className="input input-bordered"
                 required
               />
-              <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
-              </label>
             </div>
             <div className="form-control mt-6">
               <button
-                onClick={handleLogin}
                 type="submit"
                 className="btn btn-primary"
               >
