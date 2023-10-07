@@ -17,10 +17,10 @@ const Service = ({ service }) => {
           <div className="card-body items-center text-center">
             <h2 className="card-title">{service_name}</h2>
             <p>{short_description}</p>
-            <button className="btn btn-ghost text-2xl">$ 542</button>
+            <button className="btn btn-outline text-2xl">$ {price}</button>
             <div className="card-actions">
                           <Link to={`/servicedetails/${id}`}>
-                          <button className="btn btn-primary">Show Details</button>
+                          <button className="btn btn-secondary">Show Details</button>
                           </Link>
             </div>
           </div>

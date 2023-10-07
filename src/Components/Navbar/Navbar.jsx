@@ -6,7 +6,7 @@ const Navbar = () => {
 
 
   return (
-    <div className=" flex flex-col md:flex-row justify-between sticky px-10 py-5">
+    <div className=" flex flex-col md:flex-row justify-between sticky px-10 py-5 shadow-lg">
       <div>
         <h2 className=" text-2xl font-bold text-center">GameTech<span className=" bg-red-500 text-white p-2 rounded">EventHub</span></h2>
       </div>
@@ -14,6 +14,7 @@ const Navbar = () => {
         <NavLink to={"/"} className={linkStyle}>Home</NavLink>
         <NavLink to={"/about"} className={linkStyle}>About</NavLink>
         <NavLink to={"/contact"} className={linkStyle}>Contact</NavLink>
+        <NavLink to={"/services"} className={linkStyle}>Services</NavLink>
         <NavLink to={"/upcomingevents"} className={linkStyle}>Upcoming Events</NavLink>
         <NavLink to={"/blog"} className={linkStyle}>Blog</NavLink>
           </div>
