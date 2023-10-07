@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
 
 const Login = () => {
   const { signInUser } = useContext(AuthContext);
@@ -13,7 +14,7 @@ const Login = () => {
     const email = form.get('email')
         const password = form.get('password')
 
-    console.log(email, password);
+    // console.log(email, password);
 
       signInUser(email, password)
       .then((result) => {
@@ -22,10 +23,10 @@ const Login = () => {
 
         navigate(location?.state ? location.state : '/')
 
-        console.log(presentUser);
+        toast.success('Login Successful')
       })
       .catch((error) => {
-        console.log(error);
+        toast.error(error.message);
       }); 
   };
   return (
@@ -85,6 +86,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };

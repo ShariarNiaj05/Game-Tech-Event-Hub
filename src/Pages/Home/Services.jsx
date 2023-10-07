@@ -3,7 +3,7 @@ import Service from "./Service";
 
 const Services = () => {
     const services = useLoaderData()
-    console.log(services);
+    // console.log(services);
   return (
     <div className=" my-10 p-5">
       <h2 className=" text-6xl font-bold text-center">

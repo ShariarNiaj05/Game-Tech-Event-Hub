@@ -1,9 +1,11 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
 
 const Register = () => {
   const { registerUser } = useContext(AuthContext);
+  const navigate = useNavigate()
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -13,15 +15,26 @@ const Register = () => {
     const password = form.get("password");
     const img = form.get("img");
 
+    if (password.length < 6) {
+      return toast.error(' Password muse be at least 6 characters or longer')
+    }
+    if (!/[A-Z]/.test(password)) {
+      return toast.error('Password should have at least one capital letter')
+    }
+    if (!/^(?=.*[!@#$%^&*(),.?":{}|<>]).*$/.test(password)) {
+      return toast.error('Password should have at least one special character')
+    }
+
     registerUser(name, email, img, password)
       .then((result) => {
-        console.log(result.user);
+        toast.success('Registration successful');
+        navigate('/')
       })
       .catch((error) => {
-        console.log(error);
+        toast.error(error.message);
       });
   };
-  console.log(name);
+ 
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -108,6 +121,7 @@ const Register = () => {
           </div>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };

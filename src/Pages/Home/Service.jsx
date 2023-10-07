@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Service = ({ service }) => {
   const { service_name, short_description, price, image, id } = service;
-  console.log(service);
+  // console.log(service);
   return (
     <div>
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

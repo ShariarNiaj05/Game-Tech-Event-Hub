@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -8,10 +9,10 @@ const Navbar = () => {
   const handleLogOut = () => {
     logOut()
       .then(() => {
-        alert("logout successful");
+        toast.success("logout successful");
       })
       .catch((error) => {
-        alert(error);
+        toast.error(error);
       });
   };
 
@@ -74,6 +75,7 @@ const Navbar = () => {
     isPending ? "pending" : isActive ? "bg-red-500 text-white rounded p-2" : ""
   }>Blog</NavLink>
       </div> */}
+      <Toaster />
     </div>
   );
 };

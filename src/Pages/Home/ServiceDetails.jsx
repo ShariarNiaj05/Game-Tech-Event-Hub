@@ -15,7 +15,7 @@ const ServiceDetails = () => {
     reviews_count,
   } = serviceDetails;
 
-  console.log(serviceDetails);
+  // console.log(serviceDetails);
   return (
     <div>
       <div className="card card-side bg-base-100 shadow-xl flex-col md:flex-row mt-10 p-3">
