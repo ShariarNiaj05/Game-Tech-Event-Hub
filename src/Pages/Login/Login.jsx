@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
+import SocialSignIn from "../../Firebase/SocialSignIn/SocialSignIn";
 
 const Login = () => {
   const { signInUser } = useContext(AuthContext);
@@ -17,7 +18,7 @@ const Login = () => {
     // console.log(email, password);
 
       signInUser(email, password)
-      .then((result) => {
+        .then((result) => {
         const presentUser = result.user;
 
 
@@ -25,8 +26,8 @@ const Login = () => {
 
         toast.success('Login Successful')
       })
-      .catch((error) => {
-        toast.error(error.message);
+        .catch((error) => {
+          toast.error(error.message);
       }); 
   };
   return (
@@ -77,6 +78,7 @@ const Login = () => {
               </button>
             </div>
           </form>
+          <SocialSignIn></SocialSignIn>
           <div className=" text-center p-2">
             New to our website?{" "}
             <Link to={"/register"}>

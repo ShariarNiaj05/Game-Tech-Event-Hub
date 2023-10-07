@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
+import SocialSignIn from "../../Firebase/SocialSignIn/SocialSignIn";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const { registerUser } = useContext(AuthContext);
@@ -25,10 +27,19 @@ const Register = () => {
       return toast.error('Password should have at least one special character')
     }
 
-    registerUser(name, email, img, password)
+    registerUser(email, password)
       .then((result) => {
-        toast.success('Registration successful');
-        navigate('/')
+        updateProfile(result.user, {
+          displayName: name,
+          photoURL: img
+        })
+          .then(res => console.log(res))
+          .catch(error => {
+          console.log(error.message);
+          })
+          toast.success('Registration successful');
+          navigate('/')
+
       })
       .catch((error) => {
         toast.error(error.message);
@@ -112,6 +123,7 @@ const Register = () => {
               </button>
             </div>
           </form>
+          <SocialSignIn></SocialSignIn>
           <div className=" text-center p-2">
             Already have account?{" "}
             <Link to={"/login"}>
