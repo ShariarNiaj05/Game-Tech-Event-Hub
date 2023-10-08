@@ -13,9 +13,9 @@ const Testimonial = () => {
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto">
               
         <div
-          data-aos="fade-right"
+          data-aos="fade-down"
           data-aos-duration="1000"
-          className="card bg-base-100 shadow-xl">
+          className="card bg-base-100 shadow-xl overflow-hidden">
           <div className="card-body">
             <h2 className="card-title">Unmatched Experience</h2>
             <h2 className=" font-bold">Alex Thompson</h2>
@@ -36,7 +36,7 @@ const Testimonial = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="card  bg-base-100 shadow-xl">
+          className="card  bg-base-100 shadow-xl overflow-hidden">
           <div className="card-body">
             <h2 className="card-title">Where Gaming Glory Shines</h2>
             <h2 className=" font-bold">Priya Malhotra</h2>
@@ -51,9 +51,9 @@ const Testimonial = () => {
               </div>
 
         <div
-          data-aos="fade-left"
+          data-aos="fade-down"
           data-aos-duration="2000"
-          className="card bg-base-100 shadow-xl">
+          className="card bg-base-100 shadow-xl overflow-hidden">
           <div className="card-body">
             <h2 className="card-title">The Pulse of Gaming Tech!</h2>
             <h2 className=" font-bold">Charlie Nguyen</h2>

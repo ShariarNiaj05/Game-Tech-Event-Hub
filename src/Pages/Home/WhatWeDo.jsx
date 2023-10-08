@@ -44,8 +44,8 @@ const WhatWeDo = () => {
         </div>
         <div>
           <img
-                      className=" items-center justify-center w-96 md:w-full h-full rounded-full"
-                      data-aos="zoom-in"
+                      className=" items-center justify-center w-96 md:w-full h-full rounded-full overflow-hidden"
+                      data-aos="fade-down"
                       data-aos-duration="2500"
             src={whatWeDoImg}
             alt=""
