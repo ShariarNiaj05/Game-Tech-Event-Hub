@@ -1,13 +1,21 @@
+
+// import AOS from 'aos';
+import "aos/dist/aos.css";
+// import Aos from "aos";
+
 import person1 from "/person1.jpg";
 import person2 from "/person2.jpg";
 import person3 from "/person3.jpg";
 const Testimonial = () => {
   return (
-    <div className=" max-w-7xl mx-auto mt-10">
+    <div className=" max-w-sm md:max-w-2xl lg:max-w-6xl mx-auto mt-10">
       <h2 className=" text-center font-black text-3xl">Testimonial</h2>
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto">
               
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          className="card bg-base-100 shadow-xl">
           <div className="card-body">
             <h2 className="card-title">Unmatched Experience</h2>
             <h2 className=" font-bold">Alex Thompson</h2>
@@ -25,7 +33,10 @@ const Testimonial = () => {
           </div>
               </div>
 
-              <div className="card w-96 bg-base-100 shadow-xl">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="card  bg-base-100 shadow-xl">
           <div className="card-body">
             <h2 className="card-title">Where Gaming Glory Shines</h2>
             <h2 className=" font-bold">Priya Malhotra</h2>
@@ -39,7 +50,10 @@ const Testimonial = () => {
           </div>
               </div>
 
-              <div className="card w-96 bg-base-100 shadow-xl">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          className="card bg-base-100 shadow-xl">
           <div className="card-body">
             <h2 className="card-title">The Pulse of Gaming Tech!</h2>
             <h2 className=" font-bold">Charlie Nguyen</h2>

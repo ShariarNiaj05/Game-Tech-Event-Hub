@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   const linkStyle = ({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "bg-red-500 text-white rounded p-2" : "";
+    isPending ? "pending" : isActive ? "bg-red-500 text-white rounded p-2" : " hover:bg-black hover:text-white rounded p-2";
   
     const navLink = <>
     <NavLink to={"/"} className={linkStyle}>

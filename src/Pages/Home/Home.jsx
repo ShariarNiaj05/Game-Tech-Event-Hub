@@ -6,8 +6,8 @@ import Testimonial from "./Testimonial";
 import WhatWeDo from "./WhatWeDo";
 
 const Home = () => {
-    return (
-        <div className=" max-h-screen">
+  return (
+    <div className=" max-h-screen">
             <Banner></Banner>
             <WhatWeDo></WhatWeDo>
             <OurAchievement></OurAchievement>
@@ -15,7 +15,7 @@ const Home = () => {
             <Testimonial></Testimonial>
             <Footer></Footer>
         </div>
-    );
+  );
 };
 
 export default Home;

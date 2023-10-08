@@ -5,8 +5,8 @@ const Service = ({ service }) => {
   // console.log(service);
   return (
     <div>
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <div className="card w-96 bg-base-100 shadow-xl">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto">
+        <div className="card w-96 bg-base-100 shadow-xl drop-shadow">
           <figure className="px-10 pt-10">
             <img
               src={image}

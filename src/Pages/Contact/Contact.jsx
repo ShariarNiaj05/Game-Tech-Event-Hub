@@ -23,7 +23,7 @@ const Contact = () => {
          
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Submit</button>
+          <button className="btn bg-red-500 text-white hover:bg-black">Submit</button>
         </div>
       </form>
     </div>
