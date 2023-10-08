@@ -20,7 +20,7 @@ const Testimonial = () => {
             </p>
             <div className="card-actions justify-between items-center ">
               <img className=" h-20 w-20 rounded-full" src={person1} alt="" />
-              <button className="btn btn-accent">PixelPioneer Studios</button>
+              <button className="btn btn-neutral">PixelPioneer Studios</button>
             </div>
           </div>
               </div>
@@ -34,7 +34,7 @@ const Testimonial = () => {
             </p>
             <div className="card-actions justify-between items-center ">
               <img className=" h-20 w-20 rounded-full" src={person2} alt="" />
-              <button className="btn btn-accent">ElectroLegends Pro</button>
+              <button className="btn btn-neutral">ElectroLegends Pro</button>
             </div>
           </div>
               </div>
@@ -48,7 +48,7 @@ const Testimonial = () => {
             </p>
             <div className="card-actions justify-between items-center ">
               <img className=" h-20 w-20 rounded-full" src={person3} alt="" />
-              <button className="btn btn-accent">FutureGadget Pulse</button>
+              <button className="btn btn-neutral">FutureGadget Pulse</button>
             </div>
           </div>
               </div>

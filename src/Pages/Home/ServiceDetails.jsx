@@ -31,14 +31,14 @@ const ServiceDetails = () => {
 
           <button className="btn">
             Duration
-            <div className="badge badge-secondary">{duration}</div>
+            <div className="badge bg-red-500 text-white hover:bg-black">{duration}</div>
           </button>
 
-          <div className="badge badge-secondary badge-outline">
+          <div className="badge bg-red-500 text-white hover:bg-black">
             {availability}, ${price}
           </div>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Book Now</button>
+            <button className="btn bg-red-500 text-white hover:bg-black">Book Now</button>
           </div>
         </div>
       </div>

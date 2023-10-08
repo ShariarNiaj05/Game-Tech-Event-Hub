@@ -86,11 +86,11 @@ const Navbar = () => {
         }
   {user ? (
               <button onClick={handleLogOut} className=" btn btn-ghost">
-                Sign Out
+                Log Out
               </button>
             ) : (
               <NavLink to={"/login"} >
-                <button className=" btn btn-ghost">Login</button>
+                <button className=" btn bg-red-500 text-white hover:bg-black">Login</button>
               </NavLink>
             )}
   </div>

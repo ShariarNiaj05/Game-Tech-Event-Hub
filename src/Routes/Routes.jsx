@@ -10,16 +10,18 @@ import ServiceDetails from "../Pages/Home/ServiceDetails";
 import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
 import PrivateRoutes from "./PrivateRoutes";
+import ErrorPage from "../Components/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
         element: <Home></Home>,
-        loader: ()=>fetch('/service.json')
+        loader: () => fetch("/service.json"),
       },
       {
         path: "/about",
@@ -31,29 +33,41 @@ const router = createBrowserRouter([
       },
       {
         path: "/blog",
-        element: <PrivateRoutes><Blog></Blog></PrivateRoutes>
+        element: (
+          <PrivateRoutes>
+            <Blog></Blog>
+          </PrivateRoutes>
+        ),
       },
       {
         path: "/upcomingevents",
-        element: <PrivateRoutes><UpcomingEvents></UpcomingEvents></PrivateRoutes>,
+        element: (
+          <PrivateRoutes>
+            <UpcomingEvents></UpcomingEvents>
+          </PrivateRoutes>
+        ),
       },
       {
         path: "/services",
         element: <Services></Services>,
-        loader: ()=>fetch('/service.json')
+        loader: () => fetch("/service.json"),
       },
       {
         path: "/servicedetails/:id",
-        element: <PrivateRoutes><ServiceDetails></ServiceDetails></PrivateRoutes>,
-        loader: ()=>fetch('/service.json')
+        element: (
+          <PrivateRoutes>
+            <ServiceDetails></ServiceDetails>
+          </PrivateRoutes>
+        ),
+        loader: () => fetch("/service.json"),
       },
       {
         path: "/register",
-        element: <Register></Register>
+        element: <Register></Register>,
       },
       {
         path: "/login",
-        element: <Login></Login>
+        element: <Login></Login>,
       },
     ],
   },

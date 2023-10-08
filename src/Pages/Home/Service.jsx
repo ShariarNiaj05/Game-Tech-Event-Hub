@@ -20,7 +20,7 @@ const Service = ({ service }) => {
             <button className="btn btn-outline text-2xl">$ {price}</button>
             <div className="card-actions">
                           <Link to={`/servicedetails/${id}`}>
-                          <button className="btn btn-secondary">Show Details</button>
+                          <button className="btn bg-red-500 text-white hover:bg-black">Show Details</button>
                           </Link>
             </div>
           </div>

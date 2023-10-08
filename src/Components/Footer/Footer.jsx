@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
         <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded mt-40">
   <nav className="grid grid-flow-col gap-4">
-    <a className="link link-hover">About us</a> 
-    <a className="link link-hover">Contact</a> 
+    <Link to={'/about'} className="link link-hover">About us</Link> 
+    <Link to={'/contact'} className="link link-hover">Contact</Link> 
 
   </nav> 
   <nav>
@@ -15,7 +16,7 @@ const Footer = () => {
     </div>
   </nav> 
   <aside>
-    <p>Copyright © 2023 - All right reserved by <b>GameTechEventHub</b></p>
+    <p>Copyright © 2023 - All right reserved by <b>GameTech<span className="  bg-red-500 rounded p-1 text-white">EventHub</span></b></p>
   </aside>
 </footer>
     );
