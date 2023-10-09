@@ -13,9 +13,10 @@ const UpcomingEvents = () => {
           <p>Dive deep into the future of gaming at FutureScape 2023. From the intricacies of AI-driven narratives to the next leap in VR experiences, join industry pioneers and enthusiasts in exploring the innovations set to redefine our gaming experiences. Don't miss our keynote speaker, Dr. Eva Ramirez, hailed as the 'Future Visionary of Gaming', as she unveils her predictions.</p>
         </div>
         <figure>
-          <img
+            <img
+              className=' lg:h-72'
             src={banner3}
-            alt="Shoes"
+            alt=""
           />
         </figure>
           </div>
@@ -26,9 +27,10 @@ const UpcomingEvents = () => {
           <p>Ever wondered about the tech powering your favorite games? TechPlay Expo is the place to be! Witness firsthand the unveiling of next-gen consoles, cutting-edge peripherals, and the hardware innovations destined to enhance gameplay. Engage with leading tech giants, and try your hands on gadgets before they hit the market.</p>
         </div>
         <figure>
-          <img
+            <img
+              className=' h-72'
             src={banner4}
-            alt="Shoes"
+            alt=""
           />
         </figure>
           </div>
@@ -39,9 +41,10 @@ const UpcomingEvents = () => {
           <p>PixelFest is a celebration of creativity, storytelling, and the magic of indie games. Meet passionate developers, play yet-to-be-released titles, and hear inspiring stories of how small teams bring big dreams to life on screen. Featuring panel discussions, game demos, and networking sessions, it's a festival of indie brilliance.</p>
         </div>
         <figure>
-          <img
+            <img
+              className=' h-72'
             src={banner5}
-            alt="Shoes"
+            alt=""
           />
         </figure>
       </div>

@@ -7,8 +7,9 @@ const Blog = () => {
   return (
     <div className=" max-w-7xl mx-auto">
       <div className="card lg:card-side bg-base-100 shadow-xl">
-        <figure>
+        <figure >
           <img 
+            className=' h-56 md:w-96 lg:w-[650px]'
             src={blog1}
             alt="Album"
           />
@@ -25,6 +26,7 @@ const Blog = () => {
           <div className="card lg:card-side bg-base-100 shadow-xl">
         <figure>
           <img 
+            className=' h-56 md:w-96 lg:w-[650px]'
             src={blog2}
             alt="Album"
           />
@@ -39,8 +41,9 @@ const Blog = () => {
           </div>
           
           <div className="card lg:card-side bg-base-100 shadow-xl">
-        <figure>
+        <figure >
           <img 
+            className=' h-56 md:w-96 lg:w-[650px]'
             src={blog3}
             alt="Album"
           />
@@ -57,6 +60,7 @@ const Blog = () => {
           <div className="card lg:card-side bg-base-100 shadow-xl">
         <figure>
           <img 
+            className=' h-56 md:w-96 lg:w-[650px]'
             src={blog4}
             alt="Album"
           />

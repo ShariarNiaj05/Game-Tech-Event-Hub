@@ -18,7 +18,7 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: Answer: A: {}
+#### Answer: A: {}
 
 <i>In the first line a variable is declared name as greeting. in the second line the variable value has been assigned as empty object({}). In the Third line the variable has been consol.log. So the output will be {} (empty object).</i>
 
